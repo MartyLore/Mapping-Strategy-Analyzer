@@ -1,0 +1,6 @@
+{ "class": "go.TreeModel",
+  "nodeDataArray": [ 
+{"key":"1", "className":"BusinessPartner", "instanceCount":"100", "fields":[ {"attName":"Name", "attDistCount":"10000", "attType":"STRING"},{"attName":"Address", "attDistCount":"8000", "attType":"STRING"},{"attName":"Email", "attDistCount":"10000", "attType":"STRING"} ], "type":"{concrete}"},
+{"key":"2", "className":"Customer", "instanceCount":"10000", "fields":[ {"attName":"IndustrySector", "attDistCount":"10", "attType":"STRING"},{"attName":"TaxNumber", "attDistCount":"10000", "attType":"INTEGER"} ], "parent":"1", "type":"{concrete}"},
+{"key":"3", "className":"Supplier", "instanceCount":"500", "fields":[ {"attName":"BiddingCharacteristic", "attDistCount":"10", "attType":"INTEGER"} ], "parent":"1", "type":"{concrete}"}
+ ]}

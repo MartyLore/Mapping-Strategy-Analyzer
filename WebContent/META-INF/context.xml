@@ -1,0 +1,23 @@
+<Context>
+
+  <Resource name="jdbc/hana-row" auth="Container" type="javax.sql.DataSource"
+               maxTotal="100" maxIdle="30" maxWaitMillis="10000" removeAbandonedOnBorrow="true" removeAbandonedOnMaintenance="true" removeAbandonedTimeout="60"
+               username="SYSTEM" password="manager" driverClassName="com.sap.db.jdbc.Driver"
+               url="jdbc:sap://192.168.30.142:30015/"/>
+               
+  <Resource name="jdbc/hana-column" auth="Container" type="javax.sql.DataSource"
+               maxTotal="100" maxIdle="30" maxWaitMillis="10000" removeAbandonedOnBorrow="true" removeAbandonedOnMaintenance="true" removeAbandonedTimeout="60"
+               username="SYSTEM" password="manager" driverClassName="com.sap.db.jdbc.Driver"
+               url="jdbc:sap://192.168.30.142:30015/"/>
+               
+  <Resource name="jdbc/mysql" auth="Container" type="javax.sql.DataSource"
+               maxTotal="100" maxIdle="30" maxWaitMillis="10000" removeAbandonedOnBorrow="true" removeAbandonedOnMaintenance="true" removeAbandonedTimeout="60"
+               username="root" password="orm" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://192.168.30.100:3306/"/>
+               
+  <Resource name="jdbc/infinidb" auth="Container" type="javax.sql.DataSource"
+               maxTotal="100" maxIdle="30" maxWaitMillis="10000" removeAbandonedOnBorrow="true" removeAbandonedOnMaintenance="true" removeAbandonedTimeout="60"
+               username="root" password="orm" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://192.168.30.100:3307/"/>
+
+</Context>
